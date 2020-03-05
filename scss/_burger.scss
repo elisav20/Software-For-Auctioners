@@ -1,0 +1,60 @@
+.burger {
+  display: none;
+  padding: 9px 2px;
+  background: none;
+  border: 0;
+  cursor: pointer;
+
+  &__item {
+    display: block;
+    width: 30px;
+    height: 3px;
+    position: relative;
+    background-color: #fff;
+    font-size: 0;
+    transition: all 0.1s linear;
+  }
+
+  &__item:before,
+  &__item:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    transition: all 0.2s linear;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+  }
+
+  &__item:before {
+    top: -8px;
+  }
+
+  &__item:after {
+    bottom: -8px;
+  }
+
+  &.open {
+    .burger__item:after {
+      bottom: 0;
+      transform: rotate(45deg);
+    }
+
+    .burger__item {
+      background-color: transparent;
+    }
+
+    .burger__item:before {
+      top: 0;
+      transform: rotate(-45deg);
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+    & {
+      display: block;
+    }
+  }
+}

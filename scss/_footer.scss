@@ -1,0 +1,38 @@
+.footer {
+  padding: 60px 0;
+  background: $pink-light;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__copyright {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    color: $violet;
+
+    span {
+      font-weight: 500;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    & {
+      padding: 40px 0;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    &__inner {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    &__copyright {
+      margin-bottom: 10px;
+    }
+  }
+}

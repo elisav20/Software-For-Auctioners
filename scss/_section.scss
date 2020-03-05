@@ -1,0 +1,46 @@
+.section {
+  width: 100%;
+  padding: 100px 0 120px 0;
+
+  &__title {
+    width: 100%;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 85px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $violet;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 52px;
+      height: 3px;
+      background-color: $green;
+      position: absolute;
+      top: 80px;
+      left: 50%;
+      z-index: 1;
+      transform: translateX(-50%);
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+    & {
+      padding: 60px 0 80px;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    & {
+      padding: 20px 0;
+    }
+  }
+
+  @media only screen and (max-width: 430px) {
+    &__title {
+      font-size: 20px;
+    }
+  }
+}

@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- sprite -->
+    <svg style="display: none;">
+        <symbol id="icon-auction" viewBox="0 0 490.124 490.124">
+            <g>
+                <path d="M479.487,249.624l-203.6-121.8l25.7-44.5c5.3-9.5,2.1-22.2-7.4-27.5l-87.9-53c-9.9-6.2-23.4-1.5-28.6,7.4l-59.3,102.7
+                    l-11.7-7.4c-9.4-5.9-23.2-2-28.6,7.4l-37.1,64.6c-5.3,9.5-2.1,22.2,7.4,27.5l147.2,88c8.2,5.6,20.5,4.3,28.6-7.4l38.1-64.6
+                    c5.3-9.5,2.1-22.2-7.4-27.5l-12.7-7.4l13.5-23.3l203.7,121.8c7.9,5.3,20.4,4.5,27.5-7.4
+                    C492.187,267.624,488.987,254.824,479.487,249.624z M195.587,182.824c-5.3,9.5-2.1,22.2,7.4,27.5l12.7,7.4l-16.9,29.7l-112.3-66.7
+                    l16.9-28.6l11.7,7.4c10.7,5.8,21.9,2.5,28.6-7.4l59.3-102.7l53,31.8L195.587,182.824z" />
+                <path
+                    d="M325.887,362.924h-284.9c-22.2,0-40.3,18-40.3,40.3v46.6c0,22.2,18,40.3,40.3,40.3h284.9c22.2,0,40.3-18,40.3-40.3v-46.6
+                    C366.187,380.924,348.187,362.924,325.887,362.924z M324.887,449.724h-283.9v-45.5l283.9-1.1V449.724z" />
+            </g>
+        </symbol>
+
+        <symbol id="icon-megaphone" viewBox="0 0 488.8 488.8">
+            <g>
+                <g>
+                    <path
+                        d="M383.9,197.184c-9.9,0-18,8.1-18,18c0,10.4-7.3,19.1-17.1,21.2v-153.5c0-6.7-3.7-12.8-9.6-15.9    c-5.9-3.1-13.1-2.7-18.6,1.1c-80.7,55.8-126.6,62.9-157.5,62.9h-79c-46.4,0-84.1,37.7-84.1,84.1c0,46.5,37.7,84.3,84.1,84.3h21.3    v106.5c0,9.9,8.1,18,18,18s18-8.1,18-18v-124.5v-114.3h21.7c32.2,0,77.6-6.2,149.8-50.8v190.6c-25.8-18.4-68-39-129.4-42.9    c-9.9-0.6-18.5,6.9-19.1,16.8c-0.6,9.9,6.9,18.5,16.8,19.1c39.7,2.5,74.5,13,103.4,31.4c21,13.3,31.1,26.1,31.7,26.9    c3.4,4.8,8.8,7.4,14.5,7.4c1.9,0,3.7-0.3,5.6-0.9c7.4-2.4,12.4-9.4,12.4-17.2v-74.8c29.7-2.3,53.1-27.2,53.1-57.5    C401.9,205.284,393.8,197.184,383.9,197.184z M105.4,263.384H84.1c-26.5,0-48.1-21.6-48.1-48.1c0-26.6,21.6-48.2,48.1-48.2h21.3    V263.384z" />
+                </g>
+            </g>
+            <g>
+                <g>
+                    <path
+                        d="M470.8,197.184h-44.7c-9.9,0-18,8.1-18,18c0,9.9,8.1,18,18,18h44.7c9.9,0,18-8.1,18-18    C488.8,205.284,480.7,197.184,470.8,197.184z" />
+                </g>
+            </g>
+            <g>
+                <g>
+                    <path
+                        d="M481.2,143.184c-3.1-9.3-13.4-14.4-22.8-11.2l-43.3,14.8c-9.4,3.2-14.4,13.4-11.2,22.8c2.6,7.5,9.5,12.2,17,12.2    c1.9,0,3.9-0.3,5.8-1l43.3-14.8C479.4,162.784,484.4,152.584,481.2,143.184z" />
+                </g>
+            </g>
+            <g>
+                <g>
+                    <path
+                        d="M470,264.384l-43.3-14.8c-9.4-3.2-19.6,1.8-22.8,11.2c-3.2,9.4,1.8,19.6,11.2,22.8l43.3,14.8c1.9,0.7,3.9,1,5.8,1    c7.5,0,14.5-4.7,17-12.2C484.5,277.784,479.4,267.584,470,264.384z" />
+                </g>
+            </g>
+        </symbol>
+
+        <symbol id="icon-devices" viewBox="0 0 488.5 488.5">
+            <g>
+                <path
+                    d="M445,180.95h-22.4v-75.9c0-28.3-23-51.3-51.3-51.3h-320c-28.3,0-51.3,23-51.3,51.3v207.2c0,28.3,23,51.3,51.3,51.3h142    v35.2h-43.5c-9.9,0-18,8.1-18,18c0,9.9,8.1,18,18,18h123.1c9.9,0,18-8.1,18-18c0-9.9-8.1-18-18-18h-43.5v-35.2h40.2    c9.9,0,18-8.1,18-18c0-9.9-8.1-18-18-18H51.3c-8.4,0-15.3-6.8-15.3-15.3v-207.2c0-8.4,6.8-15.3,15.3-15.3h320    c8.4,0,15.3,6.8,15.3,15.3v75.9h-22.4c-24,0-43.5,19.5-43.5,43.5v166.8c0,24,19.5,43.5,43.5,43.5h80.9c9.9,0,18-8.1,18-18    c0-9.9-8.1-18-18-18h-80.9c-4.1,0-7.5-3.3-7.5-7.5v-166.8c0-4.1,3.3-7.5,7.5-7.5h80.9c4.1,0,7.5,3.3,7.5,7.5v125.9    c0,9.9,8.1,18,18,18c9.9,0,17.9-8.1,17.9-18v-125.9C488.5,200.45,469,180.95,445,180.95z" />
+            </g>
+        </symbol>
+
+        <symbol id="icon-basket" viewBox="0 0 512 512">
+            <g>
+                <path
+                    d="m480.6,124.2h-102.9l-49.6-101.7c-4.9-10.1-17.1-14.3-27.3-9.4-10.1,4.9-14.3,17.2-9.4,27.3l40.9,83.9h-152.6l40.9-83.9c5-10.1 0.7-22.4-9.4-27.3-10.2-5-22.4-0.7-27.3,9.4l-49.7,101.8h-102.8c-17,0-22.8,14.3-19.7,25.8l91.7,335.9c2.4,8.9 10.5,15 19.7,15h265.9c9.2,0 17.3-6.2 19.7-15l91.6-336c2.9-10-2.5-25.8-19.7-25.8zm-107.2,336h-234.8l-80.5-295.1h56.2l-17,34.8c-5,10.1-0.7,22.4 9.4,27.3 10.2,5 22.4,0.7 27.3-9.4l25.7-52.7h192.5l25.7,52.7c4.9,10.1 17.1,14.3 27.3,9.4 10.1-4.9 14.3-17.2 9.4-27.3l-17-34.8h56.2l-80.4,295.1z" />
+                <path
+                    d="m171.6,267.6c-11.3,0-20.4,9.1-20.4,20.4v98.3c0,11.3 9.1,20.4 20.4,20.4 11.3,0 20.4-9.1 20.4-20.4v-98.3c0-11.3-9.1-20.4-20.4-20.4z" />
+                <path
+                    d="m256,267.6c-11.3,0-20.4,9.1-20.4,20.4v98.3c0,11.3 9.1,20.4 20.4,20.4 11.3,0 20.4-9.1 20.4-20.4v-98.3c0-11.3-9.1-20.4-20.4-20.4z" />
+                <path
+                    d="m340.4,267.6c-11.3,0-20.4,9.1-20.4,20.4v98.3c0,11.3 9.1,20.4 20.4,20.4s20.4-9.1 20.4-20.4v-98.3c5.68434e-14-11.3-9.1-20.4-20.4-20.4z" />
+            </g>
+        </symbol>
+
+        <symbol id="icon-share" viewBox="0 0 56.406 56.406">
+            <g>
+                <path d="M44.802,36.087c-2.971,0-5.636,1.28-7.494,3.314l-16.143-7.766c0.386-1.075,0.605-2.224,0.605-3.432
+                    c0-1.204-0.221-2.355-0.605-3.431l16.143-7.763c1.858,2.032,4.525,3.315,7.494,3.315c5.611,0,10.162-4.55,10.162-10.162
+                    C54.964,4.549,50.413,0,44.802,0C39.19,0,34.639,4.549,34.639,10.162c0,0.539,0.055,1.063,0.136,1.577L17.59,20.002
+                    c-1.681-1.228-3.745-1.961-5.985-1.961c-5.612,0-10.162,4.549-10.162,10.159c0,5.616,4.55,10.164,10.162,10.164
+                    c2.24,0,4.305-0.732,5.984-1.962l17.184,8.265c-0.08,0.515-0.136,1.039-0.136,1.577c0,5.612,4.552,10.162,10.163,10.162
+                    c5.612,0,10.163-4.55,10.163-10.162C54.963,40.635,50.413,36.087,44.802,36.087z M44.802,6.002c2.295,0,4.162,1.867,4.162,4.162
+                    s-1.867,4.162-4.162,4.162c-1.582,0-2.601-0.855-3.066-1.364l-0.84-0.918l-0.194-1.236c-0.042-0.268-0.063-0.479-0.063-0.644
+                    C40.639,7.869,42.506,6.002,44.802,6.002z M15.517,29.609l-0.426,1.188l-1.047,0.766c-0.501,0.367-1.331,0.804-2.44,0.804
+                    c-2.295,0-4.162-1.868-4.162-4.164c0-2.293,1.867-4.159,4.162-4.159c1.11,0,1.943,0.438,2.446,0.806l1.041,0.76l0.424,1.186
+                    c0.169,0.472,0.255,0.946,0.255,1.409C15.77,28.675,15.688,29.135,15.517,29.609z M44.8,50.408c-2.296,0-4.163-1.867-4.163-4.162
+                    c0-0.162,0.021-0.376,0.064-0.655l0.189-1.215l0.847-0.928c0.802-0.878,1.891-1.361,3.064-1.361c2.295,0,4.161,1.866,4.161,4.159
+                    C48.963,48.541,47.096,50.408,44.8,50.408z" />
+            </g>
+        </symbol>
+
+        <symbol id="icon-calendar" viewBox="0 0 512 512">
+            <g>
+                <g>
+                    <path
+                        d="M488.727,46.545H356.849V23.273C356.849,10.42,346.429,0,333.576,0c-12.853,0-23.273,10.42-23.273,23.273v23.273H201.697
+                        V23.273C201.697,10.42,191.277,0,178.424,0s-23.273,10.42-23.273,23.273v23.273H23.273C10.42,46.545,0,56.965,0,69.818v418.909
+                        C0,501.58,10.42,512,23.273,512h465.455C501.58,512,512,501.58,512,488.727V69.818C512,56.965,501.58,46.545,488.727,46.545z
+                         M465.455,465.455H46.545V186.182h418.909V465.455z M465.455,139.636H46.545V93.091h418.909V139.636z" />
+                </g>
+            </g>
+            <g>
+                <g>
+                    <path
+                        d="M147.394,341.333h-31.03c-12.853,0-23.273,10.42-23.273,23.273v31.03c0,12.853,10.42,23.273,23.273,23.273h31.03
+                        c12.853,0,23.273-10.42,23.273-23.273v-31.03C170.667,351.753,160.247,341.333,147.394,341.333z" />
+                </g>
+            </g>
+        </symbol>
+    </svg>
+
+    <!-- header -->
+    <header class="header" id="js-fixed-header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <img src="assets/images/logo.png" alt="Software For Auctioners Logo" />
+                </div>
+
+                <!-- navigation -->
+                <ul class="nav" id="js-show-nav">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link" data-scroll="#js-scroll-nav-benefits">Benefits</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link" data-scroll="#js-scroll-nav-partners">Partners</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link" data-scroll="#js-scroll-nav-test_drive">Test drive</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link" data-scroll="#js-scroll-nav-reviews">reviews</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link" data-scroll="#js-scroll-nav-try_now">Try now</a>
+                    </li>
+                </ul>
+
+                <button class="burger" type="button" id="js-show-nav-navToggle">
+                    <span class="burger__item">Menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- intro -->
+    <section class="intro" id="js-scroll-nav-intro">
+        <div class="container">
+            <div class="intro__inner">
+                <h1 class="intro__title">
+                    Would you like to sell your cars nationwide?
+                </h1>
+
+                <p class="intro__text">
+                    Join the largest nationwide auto auction network & get more than <span>700,000 Members
+                        Nationwide</span>.
+                </p>
+
+                <a class="btn btn--green" href="#" target="_blank">
+                    Register
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- benefits -->
+    <section class="section" id="js-scroll-nav-benefits">
+        <div class="container">
+            <h2 class="section__title">Members’ benefits</h2>
+
+            <div class="benefits">
+                <div class="benefits__item">
+                    <svg class="benefits__icon benefits__icon--auction">
+                        <use xlink: href="#icon-auction"></use>
+                    </svg>
+
+                    <h2 class="benefits__title">
+                        Auction
+                    </h2>
+
+                    <p class="benefits__text">
+                        Partner with us and conquer the world of digital marketing.
+                    </p>
+                </div>
+
+                <div class="benefits__item">
+                    <svg class="benefits__icon benefits__icon--megaphone">
+                        <use xlink: href="#icon-megaphone"></use>
+                    </svg>
+
+                    <h2 class="benefits__title">
+                        Automatical promotion
+                    </h2>
+
+                    <p class="benefits__text">
+                        Partner with us and conquer the world of digital marketing.
+                    </p>
+                </div>
+
+                <div class="benefits__item">
+                    <svg class="benefits__icon benefits__icon--devices">
+                        <use xlink: href="#icon-devices"></use>
+                    </svg>
+
+                    <h2 class="benefits__title">
+                        Mobile platform
+                    </h2>
+
+                    <p class="benefits__text">
+                        Partner with us and conquer the world of digital marketing.
+                    </p>
+                </div>
+
+                <div class="benefits__item">
+                    <svg class="benefits__icon benefits__icon--basket">
+                        <use xlink: href="#icon-basket"></use>
+                    </svg>
+
+                    <h2 class="benefits__title">
+                        Buy now & offer
+                    </h2>
+
+                    <p class="benefits__text">
+                        Partner with us and conquer the world of digital marketing.
+                    </p>
+                </div>
+
+                <div class="benefits__item">
+                    <svg class="benefits__icon benefits__icon--share">
+                        <use xlink: href="#icon-share"></use>
+                    </svg>
+
+                    <h2 class="benefits__title">
+                        Social media exposure
+                    </h2>
+
+                    <p class="benefits__text">
+                        Partner with us and conquer the world of digital marketing.
+                    </p>
+                </div>
+
+                <div class="benefits__item">
+                    <svg class="benefits__icon benefits__icon--calendar">
+                        <use xlink: href="#icon-calendar"></use>
+                    </svg>
+
+                    <h2 class="benefits__title">
+                        Live events
+                    </h2>
+
+                    <p class="benefits__text">
+                        Partner with us and conquer the world of digital marketing.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- liqiudation -->
+    <section class="liqiudation">
+        <div class="container">
+            <div class="liqiudation__inner">
+                <div class="liqiudation__info">
+                    <h2 class="liqiudation__title">
+                        Revitalize your car sales with Car-Liqiudation
+                    </h2>
+
+                    <p class="liqiudation__text">
+                        Join the largest nationwide auto auction network & get more than <span>700,000 Members
+                            Nationwide</span>. largest nationwide auto auction
+                    </p>
+                </div>
+
+                <div class="liqiudation__video">
+                    <a href="#" target="_blank">
+                        <img src="assets/images/watch_video.png" alt="Revitalize your car sales with Car-Liqiudation">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- partnership -->
+    <section class="section" id="js-scroll-nav-partners">
+        <div class="container">
+            <h2 class="section__title">auction partnership</h2>
+
+            <div class="partnership">
+                <div class="partnership__item">
+                    <div class="partnership__photo">
+                        <img src="assets/images/partnership/chevrolet.jpg" alt="Chevrolet Orlando" />
+
+                        <a href="#" target="_blank">
+                            <div class="partnership__content">
+                                <p class="partnership__link">Visit site</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="partnership__item">
+                    <div class="partnership__photo">
+                        <img src="assets/images/partnership/PorsheAutoAuction.jpg" alt="Porshe Auto Auction" />
+
+                        <a href="#" target="_blank">
+                            <div class="partnership__content">
+                                <p class="partnership__link">Visit site</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="partnership__item">
+                    <div class="partnership__photo">
+                        <img src="assets/images/partnership/trade_in_cars.jpg" alt="Trad in cars" />
+
+                        <a href="#" target="_blank">
+                            <div class="partnership__content">
+                                <p class="partnership__link">Visit site</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="partnership__item">
+                    <div class="partnership__photo">
+                        <img src="assets/images/partnership/used-carssandiego.jpg" alt="Used cars San Diego" />
+
+                        <a href="#" target="_blank">
+                            <div class="partnership__content">
+                                <p class="partnership__link">Visit site</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="partnership__item">
+                    <div class="partnership__photo">
+                        <img src="assets/images/partnership/diesel_trucks.jpg" alt="Diesel trucks from sale" />
+
+                        <a href="#" target="_blank">
+                            <div class="partnership__content">
+                                <p class="partnership__link">Visit site</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="partnership__item">
+                    <div class="partnership__photo">
+                        <img src="assets/images/partnership/CadillacAutoAuction.jpg" alt="Cadillac Auto Auction" />
+
+                        <a href="#" target="_blank">
+                            <div class="partnership__content">
+                                <p class="partnership__link">Visit site</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="partnership__item">
+                    <div class="partnership__photo">
+                        <img src="assets/images/partnership/cadillac_for_sale.jpg" alt="Cadillac for sale" />
+
+                        <a href="#" target="_blank">
+                            <div class="partnership__content">
+                                <p class="partnership__link">Visit site</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="partnership__item">
+                    <div class="partnership__photo">
+                        <img src="assets/images/partnership/buying-usedcars.jpg" alt="Buying used cars" />
+
+                        <a href="#" target="_blank">
+                            <div class="partnership__content">
+                                <p class="partnership__link">Visit site</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="partnership__item">
+                    <div class="partnership__photo">
+                        <img src="assets/images/partnership/CarAdvertisments.jpg" alt="Car Advertisments" />
+
+                        <a href="#" target="_blank">
+                            <div class="partnership__content">
+                                <p class="partnership__link">Visit site</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="partnership__item">
+                    <div class="partnership__photo">
+                        <img src="assets/images/partnership/govauctionsdeals.jpg" alt="Govauctions deals" />
+
+                        <a href="#" target="_blank">
+                            <div class="partnership__content">
+                                <p class="partnership__link">Visit site</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="partnership__item">
+                    <div class="partnership__photo">
+                        <img src="assets/images/partnership/HowToSellACarPrivately.jpg"
+                            alt="How To Sell A Car Privately" />
+
+                        <a href="#" target="_blank">
+                            <div class="partnership__content">
+                                <p class="partnership__link">Visit site</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="partnership__item">
+                    <div class="partnership__photo">
+                        <img src="assets/images/partnership/toyota_lease_deals.jpg" alt="Toyota" />
+
+                        <a href="#" target="_blank">
+                            <div class="partnership__content">
+                                <p class="partnership__link">Visit site</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="see__more">
+                <a class="btn btn--see-more" href="#">See more</a>
+            </div>
+    </section>
+
+    <!-- post auctions -->
+    <section class="post-auction" id="js-scroll-nav-test_drive">
+        <div class="container">
+            <div class="post-auction__inner">
+                <h2 class="post-auction__title">
+                    Post your Auto Auctions WITH <span>JUST A CLICK</span>
+                </h2>
+
+                <p class="post-auction__text">
+                    Find Car Liquidation in many other social media portals and take a look at what people say about us.
+                </p>
+
+                <a class="btn btn--white" href="#" target="_blank">
+                    Learn More
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- reviews -->
+    <section class="section" id="js-scroll-nav-reviews">
+        <div class="container">
+            <h2 class="section__title">Customers’ reviews</h2>
+
+            <div class="reviews">
+                <div class="reviews__item">
+                    <p class="reviews__text">
+                        Since I've started dealing with CarLiquidation the fstomers has increased enormously. I have
+                        very good impressions about this car trading place. CarLation customers has increased
+                        enormously. I have very good impressions abou
+                    </p>
+
+                    <div class="reviews__info">
+                        <div class="reviews__author">Lenny Kravitz,</div>
+                        <div class="reviews__date">12 December 2016</div>
+                    </div>
+                </div>
+
+                <div class="reviews__item">
+                    <p class="reviews__text">
+                        Since I've started dealing with CarLiquidation the fstomers has increased enormously. I have
+                        very good impressions about this car trading place. CarLation customers has increased
+                        enormously. I have very good impressions abou
+                    </p>
+
+                    <div class="reviews__info">
+                        <div class="reviews__author">Lenny Kravitz,</div>
+                        <div class="reviews__date">12 December 2016</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- newsletter -->
+    <section class="newsletter" id="js-scroll-nav-try_now">
+        <div class="container">
+
+            <div class="newsletter__inner">
+                <div class="newsletter__item">
+                    <h2 class="newsletter__title">Are you ready?</h2>
+
+                    <p class="newsletter__text pr-150 mb-60">Start creating your own success by becoming a member
+                        of our network! </p>
+
+                    <a class="btn btn--green" href="#" target="_blank">
+                        Register Now
+                    </a>
+                </div>
+
+                <div class="newsletter__item">
+                    <h2 class="newsletter__title">Get our newsletters</h2>
+
+                    <p class="newsletter__text">
+                        Get our newsletters about the latest news and events every day!
+                        <a href="#" class="newsletter__link">Sign Up!</a>
+                    </p>
+
+                    <form class="newsletter__subscribe">
+                        <input class="newsletter__email" type="text" placeholder="Enter your email">
+                        <input class="btn btn--subscribe" type="submit" value="subscribe">
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- location -->
+    <section class="section">
+        <div class="container">
+
+            <div class="location">
+                <span class="location__item">
+                    <a href="#">
+                        Auto Auction in Alabama
+                        <span class="location__item-count">(2)</span>
+                    </a>
+                </span>
+
+                <span class="location__item">
+                    <a href="#">
+                        Auto Auction in Alaska
+                        <span class="location__item-count">(1)</span>
+                    </a>
+                </span>
+
+                <span class="location__item">
+                    <a href="#">
+                        Auto Auction in Arizona
+                        <span class="location__item-count">(4)</span>
+                    </a>
+                </span>
+
+                <span class="location__item">
+                    <a href="#">
+                        Auto Auction in Arkansas
+                        <span class="location__item-count">(5)</span>
+                    </a>
+                </span>
+
+                <span class="location__item">
+                    <a href="#">
+                        Auto Auction in California
+                        <span class="location__item-count">(27)</span>
+                    </a>
+                </span>
+
+                <span class="location__item">
+                    <a href="#">
+                        Auto Auction in Colorado
+                        <span class="location__item-count">(5)</span>
+                    </a>
+                </span>
+
+                <span class="location__item">
+                    <a href="#">
+                        Auto Auction in Connecticut
+                        <span class="location__item-count">(3)</span>
+                    </a>
+                </span>
+
+                <span class="location__item">
+                    <a href="#">
+                        Auto Auction in Delaware
+                        <span class="location__item-count">(1)</span>
+                    </a>
+                </span>
+
+                <span class="location__item">
+                    <a href="#">
+                        Auto Auction in Florida
+                        <span class="location__item-count">(18)</span>
+                    </a>
+                </span>
+
+                <span class="location__item">
+                    <a href="#">
+                        Auto Auction in Georgia
+                        <span class="location__item-count">(10)</span>
+                    </a>
+                </span>
+
+                <span class="location__item">
+                    <a href="#">
+                        Auto Auction in Hawaii
+                        <span class="location__item-count">(1)</span>
+                    </a>
+                </span>
+
+                <span class="location__item">
+                    <a href="#">
+                        Auto Auction in Idaho
+                        <span class="location__item-count">(1)</span>
+                    </a>
+                </span>
+
+                <span class="location__item">
+                    <a href="#">
+                        Auto Auction in Illinois
+                        <span class="location__item-count">(6)</span>
+                    </a>
+                </span>
+
+                <span class="location__item">
+                    <a href="#">
+                        Auto Auction in Indiana
+                        <span class="location__item-count">(2)</span>
+                    </a>
+                </span>
+
+                <span class="location__item">
+                    <a href="#">
+                        Auto Auction in Iowa
+                        <span class="location__item-count">(2)</span>
+                    </a>
+                </span>
+
+                <span class="location__item">
+                    <a href="#">
+                        Auto Auction in Kansas
+                        <span class="location__item-count">(6)</span>
+                    </a>
+                </span>
+
+                <span class="location__item">
+                    <a href="#">
+                        Auto Auction in Kentucky
+                        <span class="location__item-count">(6)</span>
+                    </a>
+                </span>
+
+                <span class="location__item">
+                    <a href="#">
+                        Auto Auction in Louisiana
+                        <span class="location__item-count">(1)</span>
+                    </a>
+                </span>
+
+                <span class="location__item">
+                    <a href="#">
+                        Auto Auction in Maine
+                        <span class="location__item-count">(2)</span>
+                    </a>
+                </span>
+
+                <span class="location__item">
+                    <a href="#">
+                        Auto Auction in Maryland
+                        <span class="location__item-count">(2)</span>
+                    </a>
+                </span>
+
+                <span class="location__item">
+                    <a href="#">
+                        Auto Auction in Massachusetts
+                        <span class="location__item-count">(7)</span>
+                    </a>
+                </span>
+
+                <span class="location__item">
+                    <a href="#">
+                        Auto Auction in Michigan
+                        <span class="location__item-count">(1)</span>
+                    </a>
+                </span>
+
+                <span class="location__item">
+                    <a href="#">
+                        Auto Auction in Minnesota
+                        <span class="location__item-count">(4)</span>
+                    </a>
+                </span>
+
+                <span class="location__item">
+                    <a href="#">
+                        Auto Auction in Mississippi
+                        <span class="location__item-count">(2)</span>
+                    </a>
+                </span>
+
+                <span class="location__item">
+                    <a href="#">
+                        Auto Auction in Missouri
+                        <span class="location__item-count">(3)</span>
+                    </a>
+                </span>
+
+                <span class="location__item">
+                    <a href="#">
+                        Auto Auction in Montana
+                        <span class="location__item-count">(0)</span>
+                    </a>
+                </span>
+
+                <span class="location__item">
+                    <a href="#">
+                        Auto Auction in Nebraska
+                        <span class="location__item-count">(0)</span>
+                    </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__copyright">
+                    &copy; 2017. <span>Softwareforauctioneers.com.</span> <br>
+                    All Rights Reserved.
+                </div>
+
+                <div class="social">
+                    <a class="social__link" href="#" target="_blank">
+                        <i class="fa fa-facebook-f fa-2x"></i>
+                    </a>
+
+                    <a class="social__link" href="#" target="_blank">
+                        <i class="fab fa-google-plus-g fa-2x"></i>
+                    </a>
+
+                    <a class="social__link" href="#" target="_blank">
+                        <i class="fab fa-blogger-b fa-2x"></i>
+                    </a>
+
+                    <a class="social__link" href="#" target="_blank">
+                        <i class="fab fa-youtube fa-2x"></i>
+                    </a>
+
+                    <a class="social__link" href="#" target="_blank">
+                        <i class="fab fa-twitter fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="assets/js/main.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+.post-auction {
+  display: flex;
+  flex-direction: column;
+  height: 761px;
+  background: url("../images/post-auction.jpg") no-repeat center;
+  background-size: cover;
+
+  &__inner {
+    width: 60%;
+    padding-top: 125px;
+  }
+
+  &__title {
+    margin-bottom: 65px;
+    padding-right: 50px;
+    font-size: 60px;
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+    line-height: 85px;
+    color: #fff;
+
+    span {
+      color: $green;
+    }
+  }
+
+  &__text {
+    margin-bottom: 70px;
+    padding-right: 150px;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 35px;
+    color: #fff;
+  }
+
+  @media only screen and (max-width: 1450px) {
+    & {
+      height: 700px;
+    }
+
+    &__title {
+      margin-bottom: 45px;
+      padding-right: 40px;
+      font-size: 40px;
+      line-height: 55px;
+    }
+  }
+
+  @media only screen and (max-width: 1300px) {
+    & {
+      height: 600px;
+    }
+  }
+
+  @media only screen and (max-width: 1150px) {
+    & {
+      height: 500px;
+    }
+
+    &__title {
+      margin-bottom: 25px;
+      padding-right: 55px;
+      font-size: 30px;
+      line-height: 45px;
+    }
+
+    &__text {
+      margin-bottom: 35px;
+    }
+  }
+
+  @media only screen and (max-width: 870px) {
+    & {
+      height: 400px;
+    }
+
+    &__inner {
+      width: 100%;
+      text-align: center;
+      background: rgba($color: $violet, $alpha: 0.8);
+      padding: 25px 20px 40px;
+      margin-top: 6%;
+    }
+
+    &__title {
+      margin-bottom: 15px;
+      padding-right: 0;
+      font-size: 30px;
+      line-height: 45px;
+    }
+
+    &__text {
+      margin-bottom: 30px;
+      padding-right: 0;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    &__inner {
+      margin-top: 20%;
+    }
+
+    &__title {
+      margin-bottom: 10px;
+      padding-right: 0;
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    &__text {
+      margin-bottom: 20px;
+      font-size: 15px;
+      line-height: 25px;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    &__inner {
+      margin-top: 15%;
+    }
+  }
+}

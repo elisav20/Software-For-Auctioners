@@ -1,0 +1,125 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  height: 1000px;
+  padding-top: 100px;
+  background: url("../images/intro_bg.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  &__inner {
+    width: 60%;
+    padding-top: 240px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    font-size: 60px;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 85px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin-bottom: 85px;
+    padding-right: 190px;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 25px;
+    color: #fff;
+
+    span {
+      font-weight: 400;
+    }
+  }
+
+  @media only screen and (max-width: 1300px) {
+    & {
+      height: 700px;
+    }
+
+    &__inner {
+      padding-top: 100px;
+    }
+
+    &__title {
+      font-size: 55px;
+      line-height: 60px;
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+    & {
+      height: 600px;
+    }
+
+    &__inner {
+      padding-top: 80px;
+    }
+
+    &__title {
+      font-size: 45px;
+      line-height: 50px;
+    }
+
+    &__text {
+      margin-bottom: 50px;
+    }
+  }
+
+  @media only screen and (max-width: 870px) {
+    &__text {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media only screen and (max-width: 850px) {
+    & {
+      height: 500px;
+    }
+
+    &__inner {
+      width: 100%;
+      padding-top: 60px;
+      text-align: center;
+    }
+
+    &__title {
+      font-size: 35px;
+      line-height: 40px;
+    }
+
+    &__text {
+      margin-bottom: 30px;
+      padding-right: 0;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    & {
+      height: 400px;
+    }
+
+    &__inner {
+      padding-top: 10px;
+    }
+
+    &__title {
+      font-size: 30px;
+      line-height: 35px;
+    }
+  }
+
+  @media only screen and (max-width: 430px) {
+    &__inner {
+      padding-top: 10px;
+    }
+
+    &__title {
+      font-size: 20px;
+      line-height: 25px;
+    }
+  }
+}

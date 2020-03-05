@@ -1,0 +1,125 @@
+.liqiudation {
+  height: 763px;
+  background: url("../images/liqiudation_bg.jpg") center no-repeat;
+  background-size: cover;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 240px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+  }
+
+  &__title {
+    margin-bottom: 45px;
+    font-size: 60px;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 85px;
+    color: #fff;
+  }
+
+  &__text {
+    padding-right: 300px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 35px;
+    color: #fff;
+
+    span {
+      font-weight: 400;
+    }
+  }
+
+  @media only screen and (max-width: 1150px) {
+    &__title {
+      font-size: 45px;
+      line-height: 60px;
+    }
+
+    &__text {
+      padding-right: 200px;
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+    & {
+      height: 550px;
+    }
+
+    &__inner {
+      padding-top: 150px;
+    }
+
+    &__text {
+      padding-right: 0;
+    }
+  }
+
+  @media only screen and (max-width: 870px) {
+    & {
+      height: 450px;
+    }
+
+    &__inner {
+      padding-top: 100px;
+    }
+
+    &__title {
+      font-size: 35px;
+      line-height: 40px;
+    }
+
+    &__text {
+      padding-right: 0;
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    &__inner {
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 80px;
+      text-align: center;
+    }
+
+    &__info {
+      width: 100%;
+    }
+
+    &__title {
+      margin-bottom: 20px;
+    }
+
+    &__text {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    &__text {
+      line-height: 25px;
+    }
+  }
+
+  @media only screen and (max-width: 430px) {
+    &__inner {
+      padding-top: 50px;
+    }
+
+    &__title {
+      font-size: 30px;
+      line-height: 32px;
+    }
+
+    &__text {
+      line-height: 22px;
+    }
+  }
+}

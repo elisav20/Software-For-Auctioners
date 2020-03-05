@@ -1,0 +1,15 @@
+.social {
+  display: flex;
+  align-items: center;
+
+  &__link {
+    height: 32px;
+    margin-right: 10px;
+    color: #d7d8d9;
+    transition: all 0.2s linear;
+
+    &:hover {
+      color: #415b97;
+    }
+  }
+}

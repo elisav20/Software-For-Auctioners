@@ -1,0 +1,89 @@
+.reviews {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+
+  &__item {
+    width: 50%;
+    padding: 115px 55px 50px 55px;
+    background: $pink-light;
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__text {
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 30px;
+    text-align: center;
+    color: $violet;
+    position: relative;
+
+    &::before {
+      display: block;
+      content: url("../images/quotes.png");
+      position: absolute;
+      top: -55px;
+      left: 0;
+      right: 0;
+      z-index: 2;
+      transform: translate(55px, 0, 0);
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: center;
+    color: $violet;
+  }
+
+  &__author {
+    margin-right: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+
+  &__date {
+    font-family: "Poppins", serif;
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    &__item {
+      padding: 69px 20px 20px;
+    }
+  }
+
+  @media only screen and (max-width: 870px) {
+    & {
+      flex-direction: column;
+    }
+
+    &__item {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    &__info {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    &__text,
+    &__author,
+    &__date {
+      font-size: 15px;
+      line-height: 20px;
+    }
+  }
+}

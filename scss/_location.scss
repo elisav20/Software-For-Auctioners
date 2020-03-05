@@ -1,0 +1,30 @@
+.location {
+  text-align: center;
+
+  &__item {
+    height: 15px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: $violet;
+    position: relative;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    a {
+      color: $violet;
+      text-decoration: none;
+    }
+
+    &::after {
+      content: "|";
+    }
+
+    &:last-child::after {
+      content: "";
+    }
+  }
+}
